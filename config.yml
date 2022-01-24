@@ -1,0 +1,44 @@
+name: "Zone Minder"
+description: "A full-featured, open source, state-of-the-art video surveillance software system"
+url: https://github.com/ZoneMinder/ZoneMinder/
+version: "0.0.1"
+slug: "zoneminder"
+arch:
+  - amd64
+ingress: true
+ingress_port: 0
+ingress_stream: true
+hassio_api: true
+panel_icon: mdi:cctv
+map:
+  - media:rw
+  - config:rw
+  - share:rw
+  - ssl
+startup: application
+ports:
+  80/tcp: 1080
+ports_description:
+  80/tcp: Web interface (Not required for Ingress)
+554
+host_network: true
+apparmor: false
+video: true
+privileged:
+  - DAC_READ_SEARCH
+  - SYS_ADMIN
+boot: auto
+options:
+  zoneminder_db_username: null
+  zoneminder_db_password : null
+  zoneminder_db_name: null
+  zoneminder_db_hostname: localhost
+schema:
+  zoneminder_db_username: str
+  zoneminder_db_password: password
+  zoneminder_db_name: str
+  zoneminder_db_hostname: str
+services:
+  - mysql:need
+
+
