@@ -10,8 +10,6 @@ ingress_port: 0
 ingress_stream: true
 hassio_api: true
 panel_icon: mdi:cctv
-discovery:
-  - zoneminder
 map:
   - media:rw
   - config:rw
@@ -41,5 +39,6 @@ schema:
   zoneminder_db_hostname: str
 services:
   - mysql:need
+    zoneminder:provide
 
 
