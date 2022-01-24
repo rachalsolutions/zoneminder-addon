@@ -38,6 +38,6 @@ schema:
   zoneminder_db_name: str
   zoneminder_db_hostname: str
 services:
-  - mysql:need
+  - zoneminder:need
 
 
