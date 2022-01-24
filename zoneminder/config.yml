@@ -2,13 +2,13 @@
 name: "Zone Minder"
 description: "A full-featured, open source, state-of-the-art video surveillance software system"
 url: https://github.com/ZoneMinder/ZoneMinder/
-version: "0.0.2"
+version: "0.0.3"
 slug: "zoneminder"
 arch:
   - amd64
 webui: "http://[HOST]:[PORT:80]/zm/index.php"
 ingress: true
-ingress_port: 0
+ingress_port: 80
 ingress_stream: true
 panel_icon: mdi:cctv
 map:
