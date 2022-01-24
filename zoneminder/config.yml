@@ -6,10 +6,10 @@ version: "0.0.2"
 slug: "zoneminder"
 arch:
   - amd64
+webui: "http://[HOST]:[PORT:80]/zm/index.php"
 ingress: true
 ingress_port: 0
 ingress_stream: true
-hassio_api: true
 panel_icon: mdi:cctv
 map:
   - media:rw
@@ -21,6 +21,9 @@ ports:
   80/tcp: 1080
 ports_description:
   80/tcp: Web interface (Not required for Ingress)
+hassio_api: true
+hassio_role: manager
+homeassistant_api: true
 host_network: true
 apparmor: false
 video: true
@@ -40,4 +43,3 @@ schema:
   zoneminder_db_hostname: str
 services:
   - mysql:need
-  - zoneminder:provide
