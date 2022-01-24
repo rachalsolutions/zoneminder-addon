@@ -1,3 +1,4 @@
+---
 name: "Zone Minder"
 description: "A full-featured, open source, state-of-the-art video surveillance software system"
 url: https://github.com/ZoneMinder/ZoneMinder/
@@ -39,6 +40,4 @@ schema:
   zoneminder_db_hostname: str
 services:
   - mysql:need
-    zoneminder:provide
-
-
+  - zoneminder:provide
