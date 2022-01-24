@@ -20,7 +20,6 @@ ports:
   80/tcp: 1080
 ports_description:
   80/tcp: Web interface (Not required for Ingress)
-554
 host_network: true
 apparmor: false
 video: true
