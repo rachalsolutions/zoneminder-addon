@@ -1,0 +1,7 @@
+---
+build_from:
+  aarch64: ubuntu:18.04
+  amd64: ubuntu:18.04
+  armhf: ubuntu:18.04
+  armv7: ubuntu:18.04
+  i386: ubuntu:18.04
