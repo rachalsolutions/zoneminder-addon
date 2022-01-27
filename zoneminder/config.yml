@@ -2,7 +2,7 @@
 name: "Zone Minder"
 description: "A full-featured, open source, state-of-the-art video surveillance software system"
 url: https://github.com/ZoneMinder/ZoneMinder/
-version: "0.0.4"
+version: "0.0.5"
 slug: "zoneminder"
 arch:
   - amd64
@@ -16,7 +16,7 @@ map:
   - config:rw
   - share:rw
   - ssl
-startup: application
+startup: services
 ports:
   80/tcp: 1080
 ports_description:
